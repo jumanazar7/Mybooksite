@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %} Delete Book {% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-3 my-5">
+            <h1 class="text-center text-primary">Asarni o'chirish</h1>
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <h3>Siz rostan ham bu kitobni o'chirmoqchimisiz?</h3>
+                <button type="submit" class="btn btn-danger">O'chirish</button>
+                <a href="{% url 'list' %}" class="btn btn-success">Orqaga</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

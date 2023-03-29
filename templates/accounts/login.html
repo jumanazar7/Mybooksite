@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %} Login User {% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-3 my-5">
+            <h1 class="text-center text-primary">Tizimga Kirish</h1>
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <p style="float: left;"><a href="{% url 'auth:password_reset'%}" style="text-decoration: none" >Forgot password?</a></p>
+                <button type="submit"style="float: right;" class="btn btn-primary">Kirish</button>   
+    
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock content %}

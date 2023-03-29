@@ -1,0 +1,45 @@
+* {
+    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #444;
+}
+
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 10px solid;
+}
+
+.form {
+    background-color: white;
+    max-width: 40%;
+    margin: 50px auto;
+    border: 10px solid;
+    border-radius: 25px;
+    padding-bottom: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+input[type=submit] {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
